@@ -98,21 +98,3 @@ empTab[1].salary;
 	}
 
 }
-
-function testJS(){
-    console.log("before calling server");
-    setTimeout(5000);
-    console.log("after calling server");
-}
-testJS();
-
-function wife(){
-    console.log("before calling server");
-    //husband
-    setTimeout(function(){
-        console.log("after calling server");
-    },5000);
-    console.log("left for office");
-}
-
-wife();
