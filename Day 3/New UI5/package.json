@@ -1,0 +1,15 @@
+{
+  "name": "myui5app",
+  "version": "1.0.0",
+  "description": "My first UI5 Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ui5",
+    "app"
+  ],
+  "author": "shekhar",
+  "license": "ISC"
+}
