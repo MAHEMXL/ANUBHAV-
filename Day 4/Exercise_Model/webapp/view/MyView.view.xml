@@ -1,27 +1,20 @@
-<spiderman:View xmlns:f="sap.ui.layout.form" xmlns:spiderman="sap.ui.core.mvc" xmlns="sap.m" controllerName="mickey.controller.MyView">
-    <!-- <Input id="myField" />
-    <Button text="Click My Btn" press="onClick" /> -->
-    <f:SimpleForm editable="true">
-        <f:content>
-            <Label text="User Name" />
-            <Input id="idUser" />
-            <Label text="Password" />
-            <Input id="idPassword" />
-            <Label />
-            <Button text="Login" press="onLogin" />
-        </f:content>
-    </f:SimpleForm>
-
-    <f:SimpleForm editable="true">
+<core:View xmlns:core="sap.ui.core.mvc" xmlns="sap.m" 
+           xmlns:f="sap.ui.layout.form"
+           controllerName="mickey.controller.MyView">
+    <!-- <Input id="myField"/>
+    <Button text="Click Me" press="onClick"/> -->
+    <f:SimpleForm>
         <f:content>
             <Label text="EmpId" />
-            <Input id="idEmpId" value="{/empStr/empId}"/>
+            <!--Binding of data with UI Control - Input field receive data from model address-->
+            <Input id="idEmpId" value="{/empStr/empId}" />
             <Label text="EmpName" />
-            <Input id="idEmpName" value="Anubhav"/>
+            <!--this syntax is called complex binding syntax in UI5-->
+            <Input id="idEmpName" value="{path : '/empStr/empName'}" />
             <Label text="Salary" />
-            <Input id="idSal" value="50000"/>
+            <Input id="idSal"/>
             <Label text="Currency" />
-            <Input id="idCurr" value="EUR"/>
+            <Input id="idCurr"/>
         </f:content>
     </f:SimpleForm>
-</spiderman:View>
+</core:View>
