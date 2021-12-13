@@ -17,9 +17,9 @@ sap.ui.define([
             {
                 "empStr": {
                             "empId": 1009,
-                            "empName": "Anubhav",
-                            "salary": 9500,
-                            "currency": "EUR",
+                            "empName": "Ananya",
+                            "salary": 5005,
+                            "currency": "USD",
                             "smoker": false,
                             "gender": "M",
                             "age": 32,
@@ -29,6 +29,9 @@ sap.ui.define([
             });
             //Step 3 : Make the model aware to the application/view/control so they can load data from model
             sap.ui.getCore().setModel(oModel);
+
+            this.getView().byId("idSal").bindValue("/empStr/salary");
+            this.getView().byId("idCurr").bindProperty("value","/empStr/currency");
         },
         onClick: function(){
             alert(this.getView().byId("myField").getValue());
