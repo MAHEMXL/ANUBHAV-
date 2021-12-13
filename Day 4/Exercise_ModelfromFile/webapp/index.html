@@ -7,27 +7,18 @@
                 data-sap-ui-resourceroots='{
                      "mickey": "./"
                 }'></script>
-           
+         
         <script>
- 
-            // var oView = new sap.ui.view({
-            //     viewName: "mickey.view.Main",
-            //     type: "JS"
-            // });
-
-            // oView.placeAt("content");
-
-            var oView2 = new sap.ui.view({
+            var oView = new sap.ui.view({
                 viewName: "mickey.view.MyView",
                 type: "XML"
             });
 
-            oView2.placeAt("content2");
+            oView.placeAt("content");
         </script>
 
     </head>
     <body class="sapUiBody">
         <div id="content"></div>
-        <div id="content2"></div>
     </body>
 </html>
