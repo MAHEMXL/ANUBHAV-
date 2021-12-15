@@ -41,6 +41,9 @@ sap.ui.define([
             
 
         },
+        onClick: funciton() {
+            this.getView().byId("idTable").bindRows("/empTab");
+        }
         onChange: function(){
             //Step 1 : we had set the model at App level, we can obtain the object 
             //of the model from the app again
