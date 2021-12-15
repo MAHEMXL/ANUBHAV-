@@ -2,7 +2,7 @@
                 xmlns:t="sap.ui.table" xmlns:core="sap.ui.core" controllerName="mickey.controller.MyView">
     <!-- <Input id="myField" /> -->
     <Button text="Click My Btn" press="onClick" />
-    <t:Table id="idTable" selectionMode="Single">
+    <t:Table id="idTable" selectionMode="Single" visibleRowCount="5">
         <t:columns>
             <t:Column>
                 <t:label>
