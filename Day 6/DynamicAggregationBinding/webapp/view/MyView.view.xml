@@ -1,7 +1,7 @@
 <mvc:View xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
                 xmlns:t="sap.ui.table" xmlns:core="sap.ui.core" controllerName="mickey.controller.MyView">
-    <!-- <Input id="myField" />
-    <Button text="Click My Btn" press="onClick" /> -->
+    <!-- <Input id="myField" /> -->
+    <Button text="Click My Btn" press="onClick" />
     <t:Table id="idTable" selectionMode="Single">
         <t:columns>
             <t:Column>
