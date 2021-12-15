@@ -33,11 +33,11 @@ sap.ui.define([
             
             
             // Dynamic Aggregation Binding
-            var oTable = this.getView().byId("idEmployeeTable");
-            // oTable.bindRows("/empTab");
-            oTable.bindAggregation("rows", {
-                path: '/empTab'
-            });
+//             var oTable = this.getView().byId("idEmployeeTable");
+//             // oTable.bindRows("/empTab");
+//             oTable.bindAggregation("rows", {
+//                 path: '/empTab'
+//             });
             
 
         },
