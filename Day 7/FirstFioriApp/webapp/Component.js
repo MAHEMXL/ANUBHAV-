@@ -3,7 +3,9 @@ sap.ui.define([
 ], function(UIComponent) {
     'use strict';
     return UIComponent.extend("tcs.fin.payroll.Component",{
-        metadata: {},
+        metadata: {
+            manifest: "json"
+        },
         init: function(){
             //create the base class object
             sap.ui.core.UIComponent.prototype.init.apply(this);
