@@ -5,10 +5,10 @@ controllerName="tcs.fin.payroll.controller.View1">
             <Button icon="sap-icon://action" press="onNext"></Button>
         </headerContent>
         <content>
-            <List id="idList" items="{/fruits}" mode="SingleSelectLeft">
+            <List id="idList" items="{/fruits}" mode="Delete" delete="onDelete">
                 <items>
                     <ObjectListItem title="{name}" intro="{type}" 
-                    icon="{imageURL}"
+                                    icon="{imageURL}"
                                     number="{price}" numberUnit="{currency}">
                         <firstStatus>
                             <ObjectStatus text="{status}" state="{
