@@ -27,8 +27,8 @@ sap.ui.define([
         onSelectionChange: function(oEvent) {
             debugger;
             var sPath = oEvent.getParameter("listItem").getBindingContextPath();
-            var oAppCon = this.getView().getParent();
-            var oView2 = oAppCon.getPage("idView2");
+            var oAppCon = this.getView().getParent().getParent();
+            var oView2 = oAppCon.getDetailPages()[0];
             oView2.bindElement(sPath);
             oAppCon.to("idView2");
         },
