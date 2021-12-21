@@ -6,10 +6,10 @@
           ls_product TYPE bapi_epm_product_header,
           lt_return type table of bapiret2.
 
-    READ TABLE it_key_tab INTO data(ls_key) WITH key name = 'BpId'.
+    READ TABLE it_key_tab INTO data(ls_key) WITH key name = 'BP_ID'.
 
     IF sy-subrc <> 0.
-      READ TABLE it_key_tab INTO ls_key WITH key name = 'ProducId'.
+      READ TABLE it_key_tab INTO ls_key WITH key name = 'PRODUCT_ID'.
 
       lv_product = ls_key-value.
 
