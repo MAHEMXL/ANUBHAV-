@@ -1,5 +1,6 @@
   method PRODUCTSET_CREATE_ENTITY.
- data: ls_entity TYPE ZCL_Z_FIRST_MPC=>TS_PRODUCT,
+
+     data: ls_entity TYPE YOUR_OWN_MPC_CLASS=>TS_PRODUCT,
            ls_header type bapi_epm_product_header,
            lt_ret    type TABLE OF bapiret2.
 
@@ -22,6 +23,13 @@
 *         CONVERSION_FACTORS       =
           RETURN                   = lt_ret
                 .
+
+      IF lt_ret IS NOT INITIAL.
+        RAISE EXCEPTION TYPE /iwbep/cx_mgw_busi_exception
+          exporting
+             message_unlimited      = 'There is a problem during create of Product'
+        .
+      ENDIF.
 
 *    Step 3: Response of data
       MOVE-CORRESPONDING ls_header to er_entity.
