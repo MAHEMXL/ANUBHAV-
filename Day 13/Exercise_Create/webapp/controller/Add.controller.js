@@ -18,9 +18,7 @@ sap.ui.define([
                         "SUPPLIER_ID": "0100000046",
                         "SUPPLIER_NAME": "SAP",
                         "PRICE": "",
-                        "CURRENCY_CODE": "EUR",
-                        "DIM_UNIT": "CM",
-                        "PRODUCT_PIC_URL": "/sap/public/bc/NWDEMO_MODEL/IMAGES/PO-1000.jpg"
+                        "CURRENCY_CODE": "EUR"
                     }
             });
             this.getView().setModel(this.oLocalData, "local");
