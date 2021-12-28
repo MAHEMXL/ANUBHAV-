@@ -55,7 +55,6 @@ sap.ui.define([
         onClear: function(){
             this.oLocalData.setProperty("/productData",{
                 "PRODUCT_ID": "",
-                "TYPE_CODE": "PR",
                 "CATEGORY": "Notebooks",
                 "NAME": "",
                 "DESCRIPTION": "",
@@ -63,8 +62,6 @@ sap.ui.define([
                 "SUPPLIER_NAME": "SAP",
                 "PRICE": "",
                 "CURRENCY_CODE": "EUR",
-                "DIM_UNIT": "CM",
-                "PRODUCT_PIC_URL": "/sap/public/bc/NWDEMO_MODEL/IMAGES/PO-1000.jpg"
             }
             );
             this.getView().byId("idSave").setText("Create");
