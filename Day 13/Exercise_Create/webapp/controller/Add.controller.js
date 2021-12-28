@@ -11,7 +11,6 @@ sap.ui.define([
             this.oLocalData.setData({
                 "productData": {
                         "PRODUCT_ID": "",
-                        "TYPE_CODE": "PR",
                         "CATEGORY": "Notebooks",
                         "NAME": "",
                         "DESCRIPTION": "",
